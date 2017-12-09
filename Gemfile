@@ -13,6 +13,9 @@ gem 'devise-i18n'
 # Adding pictures 
 gem "paperclip"
 
+#http://fontawesome.io/get-started/
+gem 'font-awesome-sass'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets

@@ -1,23 +1,56 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
+fr: 
+  activerecord: 
+    errors: 
+      models: 
+        room: 
+          attributes: 
+            accomodate:
+            address:
+            bath_room:
+            bed_room:
+            home_type:
+            listing_name:
+            price: "Le prix"
+            room_type:
+            summary:
+            blank:
+  attributes: 
+    room: 
+      accomodate: "Le nombe de voyageurs"
+      address: "L'adresse"
+      bath_room: "Le nombre de salle de bain"
+      bed_room: "Le nombre de chambres"
+      home_type: "Le genre d'habitation"
+      listing_name: "Le nom de l'annonce"
+      price: "Le prix"
+      room_type: "Le type de logement"
+      summary: "La déscription"
+      blank: "foo blank in nl bar baz"
 
-en:
-  hello: "Hello world"
+  activerecord:
+      errors:
+        templates:
+          header:
+            one: "1 erreur empêché {{model}} d'être sauvegardé"
+            other: "{{count}} erreurs ont empêché {{model}} d'être sauvegardé"
+          body: "il y avait des problèmes avec les champs suivants:"
+        messages:
+          accepted: "doit être accepté"
+          blank: "ne peut pas être vide"
+          confirmation: "ne correspond pas à la confirmation"
+          empty: "ne peut pas être vide"
+          equal_to: "doit être égale à {{count}}"
+          even: "doit être pair"
+          exclusion: "est réservé"
+          greater_than: "doit être plus grand que {{count}}"
+          greater_than_or_equal_to: "doit être plus grand ou égale à {{count}}"
+          inclusion: "il n'est pas dans la liste"
+          invalid: "est invalide"
+          less_than: "doit être inferieur à {{count}}"
+          less_than_or_equal_to: "doit être infernieur ou égale à {{count}}"
+          not_a_number: "doit être un nombre"
+          odd: "doit être impair"
+          taken: "est déjà pris"
+          too_long: "est trop long (maximum est de {{count}} caractères)"
+          too_short: "est trop court (minimum est de {{count}} caractères)"
+          wrong_length: "a une fausse longueur (doit être de {{count}} caractères)"
