@@ -9,7 +9,7 @@ fr:
         current_password: Mot de passe actuel
         current_sign_in_at: Date de la connexion actuelle
         current_sign_in_ip: IP de la connexion actuelle
-        email: Courriel
+        email: Adresse mail
         encrypted_password: Mot de passe crypté
         failed_attempts: Tentatives échouées
         last_sign_in_at: Date de la dernière connexion
@@ -22,7 +22,7 @@ fr:
         reset_password_sent_at: Clé de réinitialisation créée à
         reset_password_token: Clé de réinitialisation du mot de passe
         sign_in_count: Nombre des connexions
-        unconfirmed_email: Courriel non confirmé
+        unconfirmed_email: Adresse mail non confirmé
         unlock_token: Clé de déverrouillage
         updated_at: Date de mise à jour
     models:
@@ -32,8 +32,8 @@ fr:
       confirmed: Votre compte a été confirmé avec succès.
       new:
         resend_confirmation_instructions: Renvoyer les instructions de confirmation
-      send_instructions: Vous allez recevoir sous quelques minutes un courriel comportant des instructions pour confirmer votre compte.
-      send_paranoid_instructions: Si votre courriel existe sur notre base de données, vous recevrez sous quelques minutes un message avec des instructions pour confirmer votre compte.
+      send_instructions: Vous allez recevoir sous quelques minutes un mail comportant des instructions pour confirmer votre compte.
+      send_paranoid_instructions: Si votre adresse mail existe sur notre base de données, vous recevrez sous quelques minutes un message avec des instructions pour confirmer votre compte.
     failure:
       already_authenticated: Vous êtes déjà connecté(e).
       inactive: Votre compte n’est pas encore activé.
@@ -48,7 +48,7 @@ fr:
       confirmation_instructions:
         action: Confirmer mon adresse mail
         greeting: Bienvenue %{recipient}!
-        instruction: 'Vous pouvez confirmer votre courriel grâce au lien ci-dessous:'
+        instruction: 'Vous pouvez confirmer votre adresse mail grâce au lien ci-dessous:'
         subject: Instructions de confirmation
       password_change:
         greeting: Bonjour %{recipient}!
