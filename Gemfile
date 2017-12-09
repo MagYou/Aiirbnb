@@ -7,6 +7,8 @@ gem 'rails', '4.1.6'
 # Devise for authentification
 gem 'devise'
 gem 'devise-i18n'
+# Traduction 
+# gem 'rails-i18n'
 
 # Adding pictures 
 gem "paperclip"
@@ -38,8 +40,12 @@ gem 'spring',        group: :development
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 # Use unicorn as the app server
 # gem 'unicorn'
+
+#Notification 
+gem 'toastr-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
