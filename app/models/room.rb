@@ -1,6 +1,6 @@
 class Room < ActiveRecord::Base
   belongs_to :user
-  has_many :photo
+  has_many :photos
   
   validates :home_type, presence:true
   validates :accomodate, presence:true
