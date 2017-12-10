@@ -3,23 +3,27 @@
     <!-- Photo principale de l'annonce -->
     <div class="row">
       <div class="col-md-12">
-        <%= image_tag @photos[0].url(), class:"img-responsive" if @photos.length >0 %>
+        <%= image_tag @photos[0].image.url(), class:"img-responsive" if @photos.length >0 %>   
+        
+        
       </div>
     </div>
     
     <br>
     
-    <!-- Informations principale -->
-    
-    <div class="row">
-      <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-3 text-center">
-            <% image_tag avatar_url(@room.user), class:"img-circle avatar-large" %>
-            <br>
-            <br>
-            <% @room.user.fullname %>
-          </div>
+          
+           <!-- Informations principales -->        
+          <div class="row">           
+            <div class="col-md-8">               
+              <div class="row">                    
+                <div class="col-md-3 text-center">                      
+                  <%= image_tag avatar_url(@room.user), class:"img-circle avatar-large" %>                      
+                  <br>                       
+                  <br>                       
+                  <%= @room.user.fullname %>                  
+                </div>                    
+             
+             
           <div class="col-md-9">
             <h4>
               <%= @room.listing_name %> 
