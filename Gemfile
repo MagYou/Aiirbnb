@@ -13,6 +13,9 @@ gem 'devise-i18n'
 # Adding pictures 
 gem "paperclip"
 
+# Geolocalisation
+gem 'geocoder'
+
 #http://fontawesome.io/get-started/
 gem 'font-awesome-sass'
 
