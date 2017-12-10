@@ -72,21 +72,23 @@
                              </div>
                                        
                                              
-                              <div class="row">
-                                 <div class="col-md-4">
-                                     <div class="form-group">
-                                       <span class="btn btn-default btn-file">
-                                       <i class="fa fa-cloud-upload fa-lg">Téléchargez vos photos!</i>
-                                         <%= file_field_tag "image[]", type: :file, multiple: true %>
-                                       </span>
-                                   </div>
-                                 </div>
-                               </div>
+               <div class="row">
+                     <div class="col-md-4">
+                         <div class="form-group">
+                               <span class="btn btn-default btn-file">
+                               <i class = "fa fa-cloud-upload fa-lg"></i> Téléchargez vos photos !
+                               <%= file_field_tag "images[]", type: :file, multiple: true %>
+                               </span>
+                         </div>
+                     </div>
+               </div>
                                           
+                <font color="#555555" face="Arial, Helvetica Neue, Helvetica, Tahoma, sans-serif">
+                </font>
+                <div id="photos">
+                  <%= render 'photos/list' %>
+                </div> 
                                              
-                               <div id="photos">
-                                 <%= render 'photos/list' %>
-                               </div>
                                              
                               <div class="row">
                               <div class="col-md-4">
