@@ -43,6 +43,7 @@ class RoomsController < ApplicationController
             @room.photos.create(image: i)
           end
         end
+        @room.save
         @photos = @room.photos
         redirect_to edit_room_path(@room), notice:"Modifications enregistrée avec succés"
       else
